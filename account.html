@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - The Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="login-box">
+            <img src="28122-4-rolex-logo.png" alt="Logo" class="login-logo">
+            <h2>Sign in</h2>
+            
+            <form action="process_login.php" method="POST">
+                <label for="email">Email or mobile phone number</label>
+                <input type="email" name="email" required>
+                
+                <label for="password">Password</label>
+                <input type="password" name="password" required>
+
+                <button type="submit" class="login-btn">Sign in</button>
+            </form>
+
+            <p class="forgot-password"><a href="#">Forgot Password?</a></p>
+
+            <hr>
+
+            <p class="new-user">New to The Gallery?</p>
+            <a href="register.html" class="create-account-btn">Create your account</a>
+        </div>
+    </div>
+
+</body>
+</html>

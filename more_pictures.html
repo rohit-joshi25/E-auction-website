@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Pictures</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>More Auction Pictures</h1>
+    <section class="container_Auctions">
+        <div class="auction-item">
+            <img src="flowers.jpg" height="300" width="190">
+            <button class="add-to-cart" data-name="Painting 5" data-price="220">Buy Now</button>
+        </div>
+        <div class="auction-item">
+            <img src="light with frame.jpg" height="300" width="190">
+            <button class="add-to-cart" data-name="Painting 6" data-price="250">Buy Now</button>
+        </div>
+    </section>
+    <div class="back-to-auctions">
+        <a href="index.html">
+            <button>Back to Auctions</button>
+        </a>
+    </div>
+    <div class="request-info-container">
+        <a id="request-info-link" href="request_info.html">
+            <button class="request-info">Request Info of pictures</button>
+        </a> 
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".add-to-cart").forEach(button => {
+                button.addEventListener("click", function () {
+                    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                    let itemName = this.getAttribute("data-name");
+                    let itemPrice = this.getAttribute("data-price");
+
+                    let item = cart.find(cartItem => cartItem.name === itemName);   
+                    if (item) {
+                        item.quantity++;
+                    } else {
+                        cart.push({ name: itemName, price: parseFloat(itemPrice), quantity: 1 });
+                    }
+
+                    localStorage.setItem("cart", JSON.stringify(cart));
+                    alert(itemName + " added to cart!");
+                });
+            });
+        });
+    function selectPainting(paintingName) {
+        // Store selected painting in session storage
+        sessionStorage.setItem("selectedPainting", paintingName);
+
+        // Update the "Request Info" button with the selected painting name
+        let requestInfoLink = document.getElementById("request-info-link");
+        requestInfoLink.href = `request_info.html?painting=${encodeURIComponent(paintingName)}`;
+    }
+    </script>
+<footer>
+    <p>&copy; 2024 The Gallery. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

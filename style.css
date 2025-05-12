@@ -1,0 +1,572 @@
+.navbar {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+.nav-item{
+    margin: 30px;
+    padding: 30px;
+    height: 40px;
+    padding-bottom: 50px;
+}
+.navbar-brand{
+    font-family:'Playfair Display', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+header{
+    background-color: darkgray;
+    text-align: right;
+    margin: 10px;
+    right:auto;
+}
+.alert-dark{   
+    text-align: center;
+    background-color: rgb(211, 212, 213);
+}
+.btn{
+    padding: 10px;
+    margin: 20px;
+}
+center{
+    border: 5px;
+    border-style: double;   
+}
+.container{
+    position: relative;
+    border: 5px;
+    border-style: double;
+    z-index:0;
+}
+.container-sm{
+    font-size: 50px;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top:50%;
+    left: 60%;
+    z-index:1;
+    color: white;
+    font-family: 'Playfair Display',sans-serif;   
+    text-align: justify;
+}
+footer{
+	background-color: hsl(0, 0%, 100%);
+	color:rgb(0, 0, 0);
+	font:bold 0.9em/3em;
+	text-align:center;
+	height:30px;
+}
+/*auction page*/
+.container_Auctions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.auction-item {
+    position: relative;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.auction-item:hover {
+    transform: scale(1.03);
+}
+
+.auction-item img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.auction-item:hover img {
+    transform: scale(1.05);
+}
+
+.auction-item button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.auction-item:hover button {
+    opacity: 1;
+}
+
+.more-pictures {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.more-pictures button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.more-pictures button:hover {
+    background-color: #218838;
+}
+
+.container_Auctions{
+    width: auto;
+    border: 5px;
+    border-style: double;
+    object-fit: contain;
+    padding: 40px;
+    margin: 20px;
+    background: #9c9c9c6a;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;  
+}
+/* Back to Auctions Button */
+/* Back to Auctions Button - Below Pictures */
+.back-to-auctions {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; /* Space after pictures */
+}
+
+.back-to-auctions a {
+    display: inline-block;
+    padding: 5px 15px; /* Smaller button */
+    background: white;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-auctions a:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.back-to-auctions button {
+    background: none;
+    border: none;
+    font-size: 14px; /* Smaller text */
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.back-to-auctions a:hover button {
+    color: white;
+}
+
+/*auction end */
+.box{ 
+    width: auto;
+    object-fit: fill;
+    height: auto;
+    cursor: pointer;
+    margin: 5px 10px;
+    transition: 1s;
+}
+.box:hover{
+    border: 10px  rgb(255, 252, 252);
+    border-style: solid;
+    transform: scale(1.3);
+    z-index: 2;
+    box-shadow: 5px 5px 5px #000;  
+}
+H1{
+    font-family: 'Playfair Display',sans-serif;
+    text-align: center;
+    background-color: lightgray;
+    padding: 50px;
+}
+#contact-us {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    border-style: double;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 50%;
+}
+.message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin: 0; 
+}
+#message {
+    width: 400px; /* Increase the width as needed */
+    height: 150px; /* Increase the height as needed */
+}
+.col{
+    padding: 30px;
+}
+input[type="submit"] {
+    background-color: #161718;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #f8f8f8;
+    color: black;
+}
+.carousel-inner{
+    background-color: #000;
+    position: relative;
+    color: #ffffff; 
+}
+.text_container{
+    position: absolute;
+    bottom: 0;
+    left: 50px;    
+    right: 20px;
+    z-index: 1;
+    padding-bottom: 100px;
+    background-size: contain;
+}
+.text_container1{
+    position: absolute;
+    bottom: 130px;
+    left: 50px;    
+    right: 30px;
+    z-index: 1;
+    padding-bottom: 100px;
+}
+H2{   
+    font-family: "Playfair Display";
+}
+.image-container {
+    text-align: center;
+}
+.image-container img {
+    width: 24%;
+    margin: 1%;
+}
+@media only screen and (max-width: 600px) 
+{
+    .container-sm{
+        font-size: 18px; /* Adjust the font size accordingly */
+        text-wrap:  wrap; 
+        right: 20px;
+    }
+    .navbar-brand{
+        font-size: 20px;
+    }
+    .text_container,.text_container1{
+        font-size: 8px;
+        width: 40%;
+        top: 1%;
+        bottom: 130px;   
+    }
+    h2{
+        font-size: 20px;    
+        width: 100%;
+    }
+    .carousel-item , #ej2{
+        height: 200px;
+    }
+    .btn,.btn-custom{
+        width: 80px ;
+        height: 40px;
+        font-size: 9.5px;     
+    }
+    .card-text-main{
+        font-size: 10px;
+    }
+}
+/*backend team of about us */
+#backend-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers items */
+    align-items: center; /* Aligns items evenly */
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+}
+.team-member {
+    min-height: 300px; /* Adjust height if needed */
+}
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;  /* Prevents stretching */
+    image-rendering: crisp-edges; /* Improves clarity */
+}
+.team-member h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.team-member p {
+    font-size: 16px;
+    color: #666;
+}
+
+/*add to cart*/
+#cart-button {
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+/* 🛒 Cart Modal Styles */
+.modal {
+    display: none; /* ✅ Start hidden, but JavaScript will show it */
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.modal-content {
+    padding: 15px;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+#cart-items li {
+    padding: 5px 0;
+}
+#checkout {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.remove-item {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 3px 8px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.remove-item:hover {
+    background-color: darkred;
+}
+/* cart end */
+
+.auction-item {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.auction-item img {
+    display: block;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+.auction-item:hover img {
+    transform: scale(1.1);
+}
+.auction-item button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 0; /* Hides the button */
+    transition: opacity 0.3s ease-in-out;
+}
+.auction-item:hover button {
+    opacity: 1; /* Shows the button when hovered */
+}
+/*copyright message of more pictures*/
+footer {
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 10px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+}   
+
+/* Request Info Button */
+.request-info-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.request-info {
+    background-color: #28a745; /* Green color */
+    color: white;
+    padding: 8px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.request-info:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+/* login and new account*/
+/* Center the login box */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+/* Login Box */
+.login-box {
+    width: 350px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Logo */
+.login-logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+/* Form Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    background-color: #f0c14b;
+    color: #111;
+    border: 1px solid #a88734;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #ddb347;
+}
+
+/* Forgot Password */
+.forgot-password {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.forgot-password a {
+    color: #007185;
+    text-decoration: none;
+}
+
+/* New User Section */
+.new-user {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.create-account-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #a88734;
+    padding: 10px;
+    font-size: 14px;
+    color: #111;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.create-account-btn:hover {
+    background-color: #f7f7f7;
+}
+
+/* Already User */
+.already-user {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.already-user a {
+    color: #007185;
+    text-decoration: none;
+}
